@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Andrew Robl",
+    "net_winnings": "$5,600,296",
+    "vpip": "37%",
+    "pfr": "22%",
+    "hours_played": "159.25",
+    "hourly": "$35,167",
+    "bb_per_hour": "13.47 BB"
+  },
+  {
+    "name": "Tom Dwan",
+    "net_winnings": "$4,097,183",
+    "vpip": "53%",
+    "pfr": "25%",
+    "hours_played": "565.50",
+    "hourly": "$7,245",
+    "bb_per_hour": "2.79 BB"
+  },
+  {
+    "name": "Peter",
+    "net_winnings": "$3,670,695",
+    "vpip": "60%",
+    "pfr": "27%",
+    "hours_played": "128.50",
+    "hourly": "$28,566",
+    "bb_per_hour": "26.40 BB"
+  },
+  {
+    "name": "Leon Tsoukernik",
+    "net_winnings": "$2,725,050",
+    "vpip": "43%",
+    "pfr": "14%",
+    "hours_played": "43.00",
+    "hourly": "$63,373",
+    "bb_per_hour": "54.28 BB"
+  },
+  {
+    "name": "Garrett Adelstein",
+    "net_winnings": "$2,547,075",
+    "vpip": "36%",
+    "pfr": "24%",
+    "hours_played": "604.00",
+    "hourly": "$4,217",
+    "bb_per_hour": "9.99 BB"
+  },
+  {
+    "name": "Elton Tsang",
+    "net_winnings": "$2,231,253",
+    "vpip": "48%",
+    "pfr": "17%",
+    "hours_played": "136.00",
+    "hourly": "$16,406",
+    "bb_per_hour": "2.56 BB"
+  },
+  {
+    "name": "Andy Ni",
+    "net_winnings": "$1,948,000",
+    "vpip": "",
+    "pfr": "",
+    "hours_played": "70.00",
+    "hourly": "$27,829",
+    "bb_per_hour": "5.26 BB"
+  },
+  {
+    "name": "Hasan Onay",
+    "net_winnings": "$1,900,850",
+    "vpip": "44%",
+    "pfr": "20%",
+    "hours_played": "45.00",
+    "hourly": "$42,241",
+    "bb_per_hour": "15.43 BB"
+  },
+  {
+    "name": "Ferdinand Putra",
+    "net_winnings": "$1,773,800",
+    "vpip": "37%",
+    "pfr": "16%",
+    "hours_played": "66.00",
+    "hourly": "$26,876",
+    "bb_per_hour": "5.62 BB"
+  },
+  {
+    "name": "Mikita Badziakouski",
+    "net_winnings": "$1,690,101",
+    "vpip": "33%",
+    "pfr": "11%",
+    "hours_played": "47.00",
+    "hourly": "$35,960",
+    "bb_per_hour": "4.06 BB"
+  }
+]
