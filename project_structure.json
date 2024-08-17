@@ -1,0 +1,336 @@
+{
+  "files": [
+    {
+      "name": "README.md",
+      "path": "frontend/README.md",
+      "size": 3359,
+      "type": "text",
+      "line_count": 70,
+      "content": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in your browser.\n\nThe page will reload when you make changes.\\\nYou may also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\n\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\n\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n\n### Code Splitting\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)\n\n### Analyzing the Bundle Size\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)\n\n### Making a Progressive Web App\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)\n\n### Advanced Configuration\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)\n\n### Deployment\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)\n\n### `npm run build` fails to minify\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\n"
+    },
+    {
+      "name": "package.json",
+      "path": "frontend/package.json",
+      "size": 1001,
+      "type": "text",
+      "line_count": 44,
+      "content": "{\n  \"name\": \"frontend\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"@testing-library/jest-dom\": \"^5.17.0\",\n    \"@testing-library/react\": \"^13.4.0\",\n    \"@testing-library/user-event\": \"^13.5.0\",\n    \"axios\": \"^1.7.4\",\n    \"react\": \"^18.3.1\",\n    \"react-dom\": \"^18.3.1\",\n    \"react-router-dom\": \"^6.26.1\",\n    \"react-scripts\": \"5.0.1\",\n    \"styled-components\": \"^6.1.12\",\n    \"web-vitals\": \"^2.1.4\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\",\n    \"eject\": \"react-scripts eject\"\n  },\n  \"eslintConfig\": {\n    \"extends\": [\n      \"react-app\",\n      \"react-app/jest\"\n    ]\n  },\n  \"browserslist\": {\n    \"production\": [\n      \">0.2%\",\n      \"not dead\",\n      \"not op_mini all\"\n    ],\n    \"development\": [\n      \"last 1 chrome version\",\n      \"last 1 firefox version\",\n      \"last 1 safari version\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@babel/plugin-proposal-private-property-in-object\": \"^7.21.11\"\n  }\n}\n"
+    },
+    {
+      "name": "index.css",
+      "path": "frontend/src/index.css",
+      "size": 366,
+      "type": "text",
+      "line_count": 13,
+      "content": "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n"
+    },
+    {
+      "name": "App.test.js",
+      "path": "frontend/src/App.test.js",
+      "size": 246,
+      "type": "text",
+      "line_count": 8,
+      "content": "import { render, screen } from '@testing-library/react';\nimport App from './App';\n\ntest('renders learn react link', () => {\n  render(<App />);\n  const linkElement = screen.getByText(/learn react/i);\n  expect(linkElement).toBeInTheDocument();\n});\n"
+    },
+    {
+      "name": "setupTests.js",
+      "path": "frontend/src/setupTests.js",
+      "size": 241,
+      "type": "text",
+      "line_count": 5,
+      "content": "// jest-dom adds custom jest matchers for asserting on DOM nodes.\n// allows you to do things like:\n// expect(element).toHaveTextContent(/react/i)\n// learn more: https://github.com/testing-library/jest-dom\nimport '@testing-library/jest-dom';\n"
+    },
+    {
+      "name": "api.js",
+      "path": "frontend/src/api.js",
+      "size": 2943,
+      "type": "text",
+      "line_count": 104,
+      "content": "import axios from 'axios';\n\nconst API_URL = 'http://localhost:8000/api';\n\nconst api = axios.create({\n  baseURL: API_URL,\n  headers: {\n    'Content-Type': 'application/json',\n  },\n});\n\napi.interceptors.request.use(\n  (config) => {\n    const token = localStorage.getItem('access_token');\n    if (token) {\n      config.headers['Authorization'] = `Bearer ${token}`;\n    }\n    return config;\n  },\n  (error) => Promise.reject(error)\n);\n\napi.interceptors.response.use(\n  (response) => response,\n  async (error) => {\n    const originalRequest = error.config;\n    if (error.response.status === 401 && !originalRequest._retry) {\n      originalRequest._retry = true;\n      try {\n        const refreshToken = localStorage.getItem('refresh_token');\n        const response = await axios.post(`${API_URL}/token/refresh/`, { refresh: refreshToken });\n        localStorage.setItem('access_token', response.data.access);\n        api.defaults.headers['Authorization'] = `Bearer ${response.data.access}`;\n        return api(originalRequest);\n      } catch (refreshError) {\n        console.error('Error refreshing token:', refreshError);\n        // Logout user if refresh token is invalid\n        localStorage.removeItem('access_token');\n        localStorage.removeItem('refresh_token');\n        window.location.href = '/login';\n      }\n    }\n    return Promise.reject(error);\n  }\n);\n\nexport const login = async (username, password) => {\n  try {\n    const response = await api.post('/token/', { username, password });\n    localStorage.setItem('access_token', response.data.access);\n    localStorage.setItem('refresh_token', response.data.refresh);\n    return response.data;\n  } catch (error) {\n    console.error('Login error:', error.response ? error.response.data : error.message);\n    throw error;\n  }\n};\n\n\nexport const logout = () => {\n  localStorage.removeItem('access_token');\n  localStorage.removeItem('refresh_token');\n};\n\nexport const getLastUpdate = async () => {\n  try {\n    const response = await api.get('/last-update/');\n    return response.data.length > 0 ? response.data[0] : null;\n  } catch (error) {\n    console.error('Error fetching last update:', error);\n    return null;\n  }\n};\n\nexport const postTweet = async () => {\n  const response = await api.post('/post-tweet/');\n  return response.data;\n};\n\nexport const getTemplates = async () => {\n  const response = await api.get('/templates/');\n  return response.data;\n};\n\nexport const updateTemplate = async (show, content) => {\n  const response = await api.put(`/templates/${show}/`, { show, content });\n  return response.data;\n};\n\nexport const syncTemplate = async (show) => {\n  const response = await api.post('/sync-template/', { show });\n  return response.data;\n};\n\nexport const getPokerData = async () => {\n  try {\n    const response = await api.get('/poker-data/');\n    return response.data;\n  } catch (error) {\n    console.error('Error fetching poker data:', error);\n    throw error;\n  }\n};\n\n"
+    },
+    {
+      "name": "App.css",
+      "path": "frontend/src/App.css",
+      "size": 564,
+      "type": "text",
+      "line_count": 38,
+      "content": ".App {\n  text-align: center;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n"
+    },
+    {
+      "name": "index.js",
+      "path": "frontend/src/index.js",
+      "size": 535,
+      "type": "text",
+      "line_count": 17,
+      "content": "import React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport './index.css';\nimport App from './App';\nimport reportWebVitals from './reportWebVitals';\n\nconst root = ReactDOM.createRoot(document.getElementById('root'));\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n\n// If you want to start measuring performance in your app, pass a function\n// to log results (for example: reportWebVitals(console.log))\n// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals\nreportWebVitals();\n"
+    },
+    {
+      "name": "App.js",
+      "path": "frontend/src/App.js",
+      "size": 1556,
+      "type": "text",
+      "line_count": 54,
+      "content": "import React, { useState, useEffect } from 'react';\nimport { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';\nimport styled from 'styled-components';\nimport Navbar from './components/Navbar';\nimport Dashboard from './components/Dashboard';\nimport TweetTemplates from './components/TweetTemplates';\nimport PokerData from './components/PokerData';\nimport Login from './components/Login';\nimport { logout } from './api';\n\nconst AppContainer = styled.div`\n  background-color: #1a1b26;\n  color: white;\n  min-height: 100vh;\n`;\n\nfunction App() {\n  const [isAuthenticated, setIsAuthenticated] = useState(false);\n\n  useEffect(() => {\n    const token = localStorage.getItem('access_token');\n    setIsAuthenticated(!!token);\n  }, []);\n\n  const handleLogout = () => {\n    logout();\n    setIsAuthenticated(false);\n  };\n\n  return (\n    <Router>\n      <AppContainer>\n        {isAuthenticated && <Navbar onLogout={handleLogout} />}\n        <Routes>\n          <Route path=\"/login\" element={<Login setIsAuthenticated={setIsAuthenticated} />} />\n          <Route\n            path=\"/\"\n            element={isAuthenticated ? <Dashboard /> : <Navigate to=\"/login\" />}\n          />\n          <Route\n            path=\"/templates\"\n            element={isAuthenticated ? <TweetTemplates /> : <Navigate to=\"/login\" />}\n          />\n          <Route\n            path=\"/poker-data\"\n            element={isAuthenticated ? <PokerData /> : <Navigate to=\"/login\" />}\n          />\n        </Routes>\n      </AppContainer>\n    </Router>\n  );\n}\n\nexport default App;\n"
+    },
+    {
+      "name": "reportWebVitals.js",
+      "path": "frontend/src/reportWebVitals.js",
+      "size": 362,
+      "type": "text",
+      "line_count": 13,
+      "content": "const reportWebVitals = onPerfEntry => {\n  if (onPerfEntry && onPerfEntry instanceof Function) {\n    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {\n      getCLS(onPerfEntry);\n      getFID(onPerfEntry);\n      getFCP(onPerfEntry);\n      getLCP(onPerfEntry);\n      getTTFB(onPerfEntry);\n    });\n  }\n};\n\nexport default reportWebVitals;\n"
+    },
+    {
+      "name": "Login.js",
+      "path": "frontend/src/components/Login.js",
+      "size": 1749,
+      "type": "text",
+      "line_count": 79,
+      "content": "import React, { useState } from 'react';\nimport styled from 'styled-components';\nimport { login } from '../api';\nimport { useNavigate } from 'react-router-dom';\n\nconst LoginContainer = styled.div`\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n`;\n\nconst LoginForm = styled.form`\n  display: flex;\n  flex-direction: column;\n  width: 300px;\n  gap: 10px;\n`;\n\nconst Input = styled.input`\n  padding: 10px;\n  border-radius: 5px;\n  border: 1px solid #ccc;\n`;\n\nconst Button = styled.button`\n  padding: 10px;\n  border-radius: 5px;\n  border: none;\n  background-color: #3498db;\n  color: white;\n  cursor: pointer;\n\n  &:hover {\n    background-color: #2980b9;\n  }\n`;\n\nfunction Login({ setIsAuthenticated }) {\n  const [username, setUsername] = useState('');\n  const [password, setPassword] = useState('');\n  const navigate = useNavigate();\n\n  const handleSubmit = async (e) => {\n    e.preventDefault();\n    try {\n      await login(username, password);\n      setIsAuthenticated(true);\n      navigate('/');\n    } catch (error) {\n      console.error('Login failed:', error);\n      alert('Login failed. Please check your credentials and try again.');\n    }\n  };\n\n  return (\n    <LoginContainer>\n      <h2>Login</h2>\n      <LoginForm onSubmit={handleSubmit}>\n        <Input\n          type=\"text\"\n          placeholder=\"Username\"\n          value={username}\n          onChange={(e) => setUsername(e.target.value)}\n        />\n        <Input\n          type=\"password\"\n          placeholder=\"Password\"\n          value={password}\n          onChange={(e) => setPassword(e.target.value)}\n        />\n        <Button type=\"submit\">Login</Button>\n      </LoginForm>\n    </LoginContainer>\n  );\n}\n\nexport default Login;\n"
+    },
+    {
+      "name": "TweetTemplates.js",
+      "path": "frontend/src/components/TweetTemplates.js",
+      "size": 1593,
+      "type": "text",
+      "line_count": 68,
+      "content": "import React, { useState, useEffect } from 'react';\nimport styled from 'styled-components';\nimport { getTemplates, updateTemplate, syncTemplate } from '../api';\n\nconst TemplatesContainer = styled.div`\n  padding: 2rem;\n`;\n\nconst TemplateItem = styled.div`\n  margin-bottom: 1rem;\n`;\n\nconst Button = styled.button`\n  background-color: #3498db;\n  color: white;\n  border: none;\n  padding: 0.5rem 1rem;\n  cursor: pointer;\n  margin-right: 0.5rem;\n  &:hover {\n    background-color: #2980b9;\n  }\n`;\n\nfunction TweetTemplates() {\n  const [templates, setTemplates] = useState({});\n\n  useEffect(() => {\n    fetchTemplates();\n  }, []);\n\n  const fetchTemplates = async () => {\n    const data = await getTemplates();\n    setTemplates(data);\n  };\n\n  const handleUpdateTemplate = async (show, content) => {\n    await updateTemplate(show, content);\n    fetchTemplates();\n  };\n\n  const handleSyncTemplate = async (show) => {\n    try {\n      await syncTemplate(show);\n      alert(`Tweet sent successfully for ${show}`);\n    } catch (error) {\n      alert(`Failed to send tweet for ${show}: ${error.message}`);\n    }\n  };\n\n  return (\n    <TemplatesContainer>\n      <h1>Tweet Templates</h1>\n      {Object.entries(templates).map(([show, content]) => (\n        <TemplateItem key={show}>\n          <h3>{show}</h3>\n          <textarea\n            value={content}\n            onChange={(e) => handleUpdateTemplate(show, e.target.value)}\n          />\n          <Button onClick={() => handleSyncTemplate(show)}>Sync</Button>\n        </TemplateItem>\n      ))}\n    </TemplatesContainer>\n  );\n}\n\nexport default TweetTemplates;\n"
+    },
+    {
+      "name": "Navbar.js",
+      "path": "frontend/src/components/Navbar.js",
+      "size": 1049,
+      "type": "text",
+      "line_count": 53,
+      "content": "import React from 'react';\nimport { Link, useNavigate } from 'react-router-dom';\nimport styled from 'styled-components';\n\nconst Nav = styled.nav`\n  background-color: #2c3e50;\n  padding: 1rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n`;\n\nconst NavLink = styled(Link)`\n  color: white;\n  text-decoration: none;\n  margin-right: 1rem;\n  &:hover {\n    color: #3498db;\n  }\n`;\n\nconst LogoutButton = styled.button`\n  background-color: #e74c3c;\n  color: white;\n  border: none;\n  padding: 0.5rem 1rem;\n  cursor: pointer;\n  &:hover {\n    background-color: #c0392b;\n  }\n`;\n\nfunction Navbar({ onLogout }) {\n  const navigate = useNavigate();\n\n  const handleLogout = () => {\n    onLogout();\n    navigate('/login');\n  };\n\n  return (\n    <Nav>\n      <div>\n        <NavLink to=\"/\">Dashboard</NavLink>\n        <NavLink to=\"/templates\">Tweet Templates</NavLink>\n        <NavLink to=\"/poker-data\">Poker Data</NavLink>\n      </div>\n      <LogoutButton onClick={handleLogout}>Logout</LogoutButton>\n    </Nav>\n  );\n}\n\nexport default Navbar;\n"
+    },
+    {
+      "name": "PokerData.js",
+      "path": "frontend/src/components/PokerData.js",
+      "size": 1955,
+      "type": "text",
+      "line_count": 83,
+      "content": "import React, { useState, useEffect } from 'react';\nimport styled from 'styled-components';\nimport { getPokerData } from '../api';\n\nconst PokerDataContainer = styled.div`\n  padding: 2rem;\n`;\n\nconst Table = styled.table`\n  width: 100%;\n  border-collapse: collapse;\n`;\n\nconst Th = styled.th`\n  background-color: #2c3e50;\n  color: white;\n  padding: 0.5rem;\n`;\n\nconst Td = styled.td`\n  border: 1px solid #34495e;\n  padding: 0.5rem;\n`;\n\nfunction PokerData() {\n  const [pokerData, setPokerData] = useState([]);\n  const [isLoading, setIsLoading] = useState(true);\n  const [error, setError] = useState(null);\n\n  useEffect(() => {\n    fetchPokerData();\n  }, []);\n\n  const fetchPokerData = async () => {\n    try {\n      setIsLoading(true);\n      const data = await getPokerData();\n      setPokerData(data);\n      setError(null);\n    } catch (error) {\n      setError('Failed to fetch poker data. Please try again later.');\n    } finally {\n      setIsLoading(false);\n    }\n  };\n\n  if (isLoading) return <PokerDataContainer>Loading...</PokerDataContainer>;\n  if (error) return <PokerDataContainer>{error}</PokerDataContainer>;\n\n  return (\n    <PokerDataContainer>\n      <h1>Poker Data</h1>\n      <Table>\n        <thead>\n          <tr>\n            <Th>Name</Th>\n            <Th>Net Winnings</Th>\n            <Th>VPIP</Th>\n            <Th>PFR</Th>\n            <Th>Hours Played</Th>\n            <Th>Hourly</Th>\n            <Th>BB/Hour</Th>\n          </tr>\n        </thead>\n        <tbody>\n          {pokerData.map((player, index) => (\n            <tr key={index}>\n              <Td>{player.name}</Td>\n              <Td>{player.net_winnings}</Td>\n              <Td>{player.vpip}</Td>\n              <Td>{player.pfr}</Td>\n              <Td>{player.hours_played}</Td>\n              <Td>{player.hourly}</Td>\n              <Td>{player.bb_per_hour}</Td>\n            </tr>\n          ))}\n        </tbody>\n      </Table>\n    </PokerDataContainer>\n  );\n}\n\nexport default PokerData;\n"
+    },
+    {
+      "name": "Dashboard.js",
+      "path": "frontend/src/components/Dashboard.js",
+      "size": 1116,
+      "type": "text",
+      "line_count": 51,
+      "content": "import React, { useState, useEffect } from 'react';\nimport styled from 'styled-components';\nimport { getLastUpdate, postTweet } from '../api';\n\nconst DashboardContainer = styled.div`\n  padding: 2rem;\n`;\n\nconst Button = styled.button`\n  background-color: #3498db;\n  color: white;\n  border: none;\n  padding: 0.5rem 1rem;\n  cursor: pointer;\n  &:hover {\n    background-color: #2980b9;\n  }\n`;\n\nfunction Dashboard() {\n  const [lastUpdate, setLastUpdate] = useState(null);\n\n  useEffect(() => {\n    fetchLastUpdate();\n  }, []);\n\n  const fetchLastUpdate = async () => {\n    const data = await getLastUpdate();\n    setLastUpdate(data ? data.update_time : 'Never');\n  };\n\n  const handlePostTweet = async () => {\n    try {\n      await postTweet();\n      alert('Tweet posted successfully!');\n      fetchLastUpdate();\n    } catch (error) {\n      alert('Error posting tweet: ' + error.message);\n    }\n  };\n\n  return (\n    <DashboardContainer>\n      <h1>Dashboard</h1>\n      <p>Last update: {lastUpdate}</p>\n      <Button onClick={handlePostTweet}>Post Tweet Now</Button>\n    </DashboardContainer>\n  );\n}\n\nexport default Dashboard;\n"
+    },
+    {
+      "name": "manifest.json",
+      "path": "frontend/public/manifest.json",
+      "size": 492,
+      "type": "text",
+      "line_count": 25,
+      "content": "{\n  \"short_name\": \"React App\",\n  \"name\": \"Create React App Sample\",\n  \"icons\": [\n    {\n      \"src\": \"favicon.ico\",\n      \"sizes\": \"64x64 32x32 24x24 16x16\",\n      \"type\": \"image/x-icon\"\n    },\n    {\n      \"src\": \"logo192.png\",\n      \"type\": \"image/png\",\n      \"sizes\": \"192x192\"\n    },\n    {\n      \"src\": \"logo512.png\",\n      \"type\": \"image/png\",\n      \"sizes\": \"512x512\"\n    }\n  ],\n  \"start_url\": \".\",\n  \"display\": \"standalone\",\n  \"theme_color\": \"#000000\",\n  \"background_color\": \"#ffffff\"\n}\n"
+    },
+    {
+      "name": "index.html",
+      "path": "frontend/public/index.html",
+      "size": 1721,
+      "type": "text",
+      "line_count": 43,
+      "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Web site created using create-react-app\"\n    />\n    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\n    <!--\n      manifest.json provides metadata used when your web app is installed on a\n      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/\n    -->\n    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n    <!--\n      Notice the use of %PUBLIC_URL% in the tags above.\n      It will be replaced with the URL of the `public` folder during the build.\n      Only files inside the `public` folder can be referenced from the HTML.\n\n      Unlike \"/favicon.ico\" or \"favicon.ico\", \"%PUBLIC_URL%/favicon.ico\" will\n      work correctly both with client-side routing and a non-root public URL.\n      Learn how to configure a non-root public URL by running `npm run build`.\n    -->\n    <title>React App</title>\n  </head>\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n    <!--\n      This HTML file is a template.\n      If you open it directly in the browser, you will see an empty page.\n\n      You can add webfonts, meta tags, or analytics to this file.\n      The build step will place the bundled scripts into the <body> tag.\n\n      To begin the development, run `npm start` or `yarn start`.\n      To create a production bundle, use `npm run build` or `yarn build`.\n    -->\n  </body>\n</html>\n"
+    },
+    {
+      "name": "highroll_poker_data.json",
+      "path": "backend/highroll_poker_data.json",
+      "size": 1911,
+      "type": "text",
+      "line_count": 92,
+      "content": "[\n  {\n    \"name\": \"Andrew Robl\",\n    \"net_winnings\": \"$5,600,296\",\n    \"vpip\": \"37%\",\n    \"pfr\": \"22%\",\n    \"hours_played\": \"159.25\",\n    \"hourly\": \"$35,167\",\n    \"bb_per_hour\": \"13.47 BB\"\n  },\n  {\n    \"name\": \"Tom Dwan\",\n    \"net_winnings\": \"$4,097,183\",\n    \"vpip\": \"53%\",\n    \"pfr\": \"25%\",\n    \"hours_played\": \"565.50\",\n    \"hourly\": \"$7,245\",\n    \"bb_per_hour\": \"2.79 BB\"\n  },\n  {\n    \"name\": \"Peter\",\n    \"net_winnings\": \"$3,670,695\",\n    \"vpip\": \"60%\",\n    \"pfr\": \"27%\",\n    \"hours_played\": \"128.50\",\n    \"hourly\": \"$28,566\",\n    \"bb_per_hour\": \"26.40 BB\"\n  },\n  {\n    \"name\": \"Leon Tsoukernik\",\n    \"net_winnings\": \"$2,725,050\",\n    \"vpip\": \"43%\",\n    \"pfr\": \"14%\",\n    \"hours_played\": \"43.00\",\n    \"hourly\": \"$63,373\",\n    \"bb_per_hour\": \"54.28 BB\"\n  },\n  {\n    \"name\": \"Garrett Adelstein\",\n    \"net_winnings\": \"$2,547,075\",\n    \"vpip\": \"36%\",\n    \"pfr\": \"24%\",\n    \"hours_played\": \"604.00\",\n    \"hourly\": \"$4,217\",\n    \"bb_per_hour\": \"9.99 BB\"\n  },\n  {\n    \"name\": \"Elton Tsang\",\n    \"net_winnings\": \"$2,231,253\",\n    \"vpip\": \"48%\",\n    \"pfr\": \"17%\",\n    \"hours_played\": \"136.00\",\n    \"hourly\": \"$16,406\",\n    \"bb_per_hour\": \"2.56 BB\"\n  },\n  {\n    \"name\": \"Andy Ni\",\n    \"net_winnings\": \"$1,948,000\",\n    \"vpip\": \"\",\n    \"pfr\": \"\",\n    \"hours_played\": \"70.00\",\n    \"hourly\": \"$27,829\",\n    \"bb_per_hour\": \"5.26 BB\"\n  },\n  {\n    \"name\": \"Hasan Onay\",\n    \"net_winnings\": \"$1,900,850\",\n    \"vpip\": \"44%\",\n    \"pfr\": \"20%\",\n    \"hours_played\": \"45.00\",\n    \"hourly\": \"$42,241\",\n    \"bb_per_hour\": \"15.43 BB\"\n  },\n  {\n    \"name\": \"Ferdinand Putra\",\n    \"net_winnings\": \"$1,773,800\",\n    \"vpip\": \"37%\",\n    \"pfr\": \"16%\",\n    \"hours_played\": \"66.00\",\n    \"hourly\": \"$26,876\",\n    \"bb_per_hour\": \"5.62 BB\"\n  },\n  {\n    \"name\": \"Mikita Badziakouski\",\n    \"net_winnings\": \"$1,690,101\",\n    \"vpip\": \"33%\",\n    \"pfr\": \"11%\",\n    \"hours_played\": \"47.00\",\n    \"hourly\": \"$35,960\",\n    \"bb_per_hour\": \"4.06 BB\"\n  }\n]"
+    },
+    {
+      "name": "manage.py",
+      "path": "backend/manage.py",
+      "size": 663,
+      "type": "text",
+      "line_count": 22,
+      "content": "#!/usr/bin/env python\n\"\"\"Django's command-line utility for administrative tasks.\"\"\"\nimport os\nimport sys\n\n\ndef main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"\n        ) from exc\n    execute_from_command_line(sys.argv)\n\n\nif __name__ == '__main__':\n    main()\n"
+    },
+    {
+      "name": "scraper.py",
+      "path": "backend/scraper/scraper.py",
+      "size": 2089,
+      "type": "text",
+      "line_count": 62,
+      "content": "from selenium import webdriver\nfrom selenium.webdriver.chrome.service import Service\nfrom selenium.webdriver.chrome.options import Options\nfrom selenium.webdriver.common.by import By\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.support import expected_conditions as EC\nimport json\nimport time\nimport os\n\n\ndef scrape_data():\n    # Set up Chrome options\n    chrome_options = Options()\n    chrome_options.add_argument(\"--headless\")  # Run in headless mode\n    chrome_options.add_argument(\"--disable-gpu\")\n    chrome_options.add_argument(\"--no-sandbox\")\n\n    # Set up the Chrome WebDriver\n    chrome_driver_path = os.environ.get(\n        'CHROMEDRIVER_PATH', '/usr/bin/chromedriver')\n    service = Service(chrome_driver_path)\n    driver = webdriver.Chrome(service=service, options=chrome_options)\n\n    # Navigate to the page\n    url = \"https://highrollpoker.com/tracker/players\"\n    driver.get(url)\n\n    # Wait for the table to load\n    wait = WebDriverWait(driver, 10)\n    table = wait.until(EC.presence_of_element_located((By.TAG_NAME, \"table\")))\n\n    # Give some time for JavaScript to fully render the content\n    time.sleep(5)\n\n    players = []\n    rows = table.find_elements(By.TAG_NAME, \"tr\")[1:]  # Skip header row\n    for row in rows:\n        columns = row.find_elements(By.TAG_NAME, \"td\")\n        if len(columns) >= 9:  # Ensure there are enough columns after skipping\n            player = {\n                \"name\": columns[3].text.strip(),\n                \"net_winnings\": columns[4].text.strip(),\n                \"vpip\": columns[5].text.strip(),\n                \"pfr\": columns[6].text.strip(),\n                \"hours_played\": columns[7].text.strip(),\n                \"hourly\": columns[8].text.strip(),\n                \"bb_per_hour\": columns[9].text.strip()\n            }\n            players.append(player)\n\n    driver.quit()\n\n    # Save the data to a JSON file\n    with open('highroll_poker_data.json', 'w') as f:\n        json.dump(players, f, indent=2)\n\n    print(f\"Scraped {len(players)} players\")\n\n\nif __name__ == \"__main__\":\n    scrape_data()\n"
+    },
+    {
+      "name": "twitter_post.py",
+      "path": "backend/twitter/twitter_post.py",
+      "size": 1007,
+      "type": "text",
+      "line_count": 34,
+      "content": "import os\nfrom dotenv import load_dotenv\nimport tweepy\n\nload_dotenv()\n\n\ndef post_tweet(tweet_content):\n    # Get credentials from environment variables\n    consumer_key = os.getenv('TWITTER_CONSUMER_KEY')\n    consumer_secret = os.getenv('TWITTER_CONSUMER_SECRET')\n    access_token = os.getenv('TWITTER_ACCESS_TOKEN')\n    access_token_secret = os.getenv('TWITTER_ACCESS_TOKEN_SECRET')\n\n    # Initialize the client with OAuth 1.0a credentials\n    client = tweepy.Client(\n        consumer_key=consumer_key,\n        consumer_secret=consumer_secret,\n        access_token=access_token,\n        access_token_secret=access_token_secret\n    )\n\n    # Post the tweet using Client.create_tweet()\n    try:\n        response = client.create_tweet(text=tweet_content)\n        print(f\"Tweet posted successfully! Tweet ID: {response.data['id']}\")\n        return True\n    except Exception as e:\n        print(f\"Error posting tweet: {str(e)}\")\n        raise\n\n\nif __name__ == \"__main__\":\n    post_tweet(\"This is a test tweet.\")\n"
+    },
+    {
+      "name": "tweet_post_generator.py",
+      "path": "backend/twitter/tweet_post_generator.py",
+      "size": 1090,
+      "type": "text",
+      "line_count": 36,
+      "content": "import json\n\n\ndef generate_tweet():\n    # Load the scraped data\n    with open('highroll_poker_data.json', 'r') as f:\n        players = json.load(f)\n\n    # Sort players by net winnings (removing $ and , for proper numeric sorting)\n    players.sort(key=lambda x: float(x['net_winnings'].replace(\n        '$', '').replace(',', '')), reverse=True)\n\n    # Create the Twitter post\n    twitter_post = \"Top HighRoll Poker Players:\\n\\n\"\n    for player in players[:5]:  # Limit to top 5 players\n        twitter_post += f\"{player['name']\n                           }: {player['net_winnings']} ({player['bb_per_hour']})\\n\"\n\n    twitter_post += \"\\nFull stats: https://highrollpoker.com/tracker/players\"\n\n    # Ensure the post is within Twitter's character limit\n    if len(twitter_post) > 280:\n        twitter_post = twitter_post[:277] + \"...\"\n\n    print(twitter_post)\n    print(f\"\\nCharacter count: {len(twitter_post)}\")\n\n    # Save the post to a file\n    with open('twitter_post.txt', 'w') as f:\n        f.write(twitter_post)\n\n    return twitter_post\n\n\nif __name__ == \"__main__\":\n    generate_tweet()\n"
+    },
+    {
+      "name": "urls.py",
+      "path": "backend/backend/urls.py",
+      "size": 811,
+      "type": "text",
+      "line_count": 23,
+      "content": "\"\"\"\nURL configuration for backend project.\n\nThe `urlpatterns` list routes URLs to views. For more information please see:\n    https://docs.djangoproject.com/en/5.1/topics/http/urls/\nExamples:\nFunction views\n    1. Add an import:  from my_app import views\n    2. Add a URL to urlpatterns:  path('', views.home, name='home')\nClass-based views\n    1. Add an import:  from other_app.views import Home\n    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')\nIncluding another URLconf\n    1. Import the include() function: from django.urls import include, path\n    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))\n\"\"\"\nfrom django.contrib import admin\nfrom django.urls import path, include\n\nurlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('api.urls')),\n]\n"
+    },
+    {
+      "name": "wsgi.py",
+      "path": "backend/backend/wsgi.py",
+      "size": 391,
+      "type": "text",
+      "line_count": 16,
+      "content": "\"\"\"\nWSGI config for backend project.\n\nIt exposes the WSGI callable as a module-level variable named ``application``.\n\nFor more information on this file, see\nhttps://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/\n\"\"\"\n\nimport os\n\nfrom django.core.wsgi import get_wsgi_application\n\nos.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')\n\napplication = get_wsgi_application()\n"
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/backend/__init__.py",
+      "size": 0,
+      "type": "text"
+    },
+    {
+      "name": "asgi.py",
+      "path": "backend/backend/asgi.py",
+      "size": 391,
+      "type": "text",
+      "line_count": 16,
+      "content": "\"\"\"\nASGI config for backend project.\n\nIt exposes the ASGI callable as a module-level variable named ``application``.\n\nFor more information on this file, see\nhttps://docs.djangoproject.com/en/5.1/howto/deployment/asgi/\n\"\"\"\n\nimport os\n\nfrom django.core.asgi import get_asgi_application\n\nos.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')\n\napplication = get_asgi_application()\n"
+    },
+    {
+      "name": "settings.py",
+      "path": "backend/backend/settings.py",
+      "size": 4593,
+      "type": "text",
+      "line_count": 175,
+      "content": "\"\"\"\nDjango settings for backend project.\n\nGenerated by 'django-admin startproject' using Django 5.1.\n\nFor more information on this file, see\nhttps://docs.djangoproject.com/en/5.1/topics/settings/\n\nFor the full list of settings and their values, see\nhttps://docs.djangoproject.com/en/5.1/ref/settings/\n\"\"\"\n\nfrom pathlib import Path\nimport os\nfrom dotenv import load_dotenv\nfrom datetime import timedelta\n\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\nBASE_DIR = Path(__file__).resolve().parent.parent\n\nload_dotenv()\n\n\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-fa$do0+h!jw#f5l5bv!ql6m5u+#w%*+gqscdr*%h6(hh78q&wt'\n\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n\nALLOWED_HOSTS = []\n\n\n# Application definition\n\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'corsheaders',\n    'api',\n    'rest_framework_simplejwt',\n]\n\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'corsheaders.middleware.CorsMiddleware'\n]\n\nCORS_ALLOW_ALL_ORIGINS = True\n\nROOT_URLCONF = 'backend.urls'\n\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',\n                'django.contrib.messages.context_processors.messages',\n            ],\n        },\n    },\n]\n\nWSGI_APPLICATION = 'backend.wsgi.application'\n\n\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\n\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n\n\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\n\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',\n    },\n]\n\n\n# Internationalization\n# https://docs.djangoproject.com/en/5.1/topics/i18n/\n\nLANGUAGE_CODE = 'en-us'\n\nTIME_ZONE = 'UTC'\n\nUSE_I18N = True\n\nUSE_TZ = True\n\n\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\n\nSTATIC_URL = 'static/'\n\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\n\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n\nREST_FRAMEWORK = {\n    'DEFAULT_AUTHENTICATION_CLASSES': (\n        'rest_framework_simplejwt.authentication.JWTAuthentication',\n    ),\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.IsAuthenticated',\n    ]\n}\n\nSIMPLE_JWT = {\n    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),\n    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),\n    'ROTATE_REFRESH_TOKENS': False,\n    'BLACKLIST_AFTER_ROTATION': True,\n    'UPDATE_LAST_LOGIN': False,\n\n    'ALGORITHM': 'HS256',\n    'SIGNING_KEY': SECRET_KEY,\n    'VERIFYING_KEY': None,\n    'AUDIENCE': None,\n    'ISSUER': None,\n\n    'AUTH_HEADER_TYPES': ('Bearer',),\n    'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',\n    'USER_ID_FIELD': 'id',\n    'USER_ID_CLAIM': 'user_id',\n\n    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),\n    'TOKEN_TYPE_CLAIM': 'token_type',\n\n    'JTI_CLAIM': 'jti',\n\n    'SLIDING_TOKEN_REFRESH_EXP_CLAIM': 'refresh_exp',\n    'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),\n    'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),\n}\n\n# For development only. Use specific origins in production.\nCORS_ALLOW_ALL_ORIGINS = True\n"
+    },
+    {
+      "name": "apps.py",
+      "path": "backend/api/apps.py",
+      "size": 138,
+      "type": "text",
+      "line_count": 6,
+      "content": "from django.apps import AppConfig\n\n\nclass ApiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'api'\n"
+    },
+    {
+      "name": "urls.py",
+      "path": "backend/api/urls.py",
+      "size": 834,
+      "type": "text",
+      "line_count": 24,
+      "content": "from django.urls import path, include\nfrom rest_framework.routers import DefaultRouter\nfrom rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView\nfrom .views import (\n    TweetTemplateViewSet,\n    LastUpdateViewSet,\n    manual_post_tweet,\n    sync_template,\n    get_poker_data,\n)\n\n\nrouter = DefaultRouter()\nrouter.register(r'templates', TweetTemplateViewSet)\nrouter.register(r'last-update', LastUpdateViewSet)\n\nurlpatterns = [\n    path('', include(router.urls)),\n    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),\n    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),\n    path('post-tweet/', manual_post_tweet, name='post-tweet'),\n    path('sync-template/', sync_template, name='sync-template'),\n    path('poker-data/', get_poker_data, name='get-poker-data'),\n]\n"
+    },
+    {
+      "name": "views.py",
+      "path": "backend/api/views.py",
+      "size": 2701,
+      "type": "text",
+      "line_count": 75,
+      "content": "import json\nfrom django.shortcuts import render\nfrom django.utils import timezone\nfrom rest_framework import viewsets, permissions\nfrom rest_framework.decorators import api_view, permission_classes\nfrom rest_framework.response import Response\nfrom rest_framework_simplejwt.authentication import JWTAuthentication\n\nfrom .models import TweetTemplate, LastUpdate\nfrom .serializers import TweetTemplateSerializer, LastUpdateSerializer\nfrom scraper.scraper import scrape_data\nfrom twitter.tweet_post_generator import generate_tweet\nfrom twitter.twitter_post import post_tweet\n\n\nclass TweetTemplateViewSet(viewsets.ModelViewSet):\n    queryset = TweetTemplate.objects.all()\n    serializer_class = TweetTemplateSerializer\n    permission_classes = [permissions.IsAuthenticated]\n    authentication_classes = [JWTAuthentication]\n\n\nclass LastUpdateViewSet(viewsets.ReadOnlyModelViewSet):\n    queryset = LastUpdate.objects.all()\n    serializer_class = LastUpdateSerializer\n    permission_classes = [permissions.IsAuthenticated]\n    authentication_classes = [JWTAuthentication]\n\n    def list(self, request):\n        last_update = self.get_queryset().order_by('-update_time').first()\n        if last_update:\n            serializer = self.get_serializer(last_update)\n            return Response([serializer.data])\n        return Response([])\n\n\n@api_view(['POST'])\n@permission_classes([permissions.IsAuthenticated])\ndef manual_post_tweet(request):\n    try:\n        scrape_data()\n        tweet_content = generate_tweet()\n        post_tweet(tweet_content)\n        LastUpdate.objects.create()\n        return Response({\"success\": True, \"message\": \"Tweet posted successfully\"})\n    except Exception as e:\n        return Response({\"success\": False, \"error\": str(e)})\n\n\n@api_view(['POST'])\n@permission_classes([permissions.IsAuthenticated])\ndef sync_template(request):\n    show = request.data.get('show')\n    try:\n        template = TweetTemplate.objects.get(show=show)\n        post_tweet(template.content)\n        LastUpdate.objects.create()\n        return Response({\"success\": True})\n    except TweetTemplate.DoesNotExist:\n        return Response({\"success\": False, \"error\": \"Template not found\"})\n    except Exception as e:\n        return Response({\"success\": False, \"error\": str(e)})\n\n\n@api_view(['GET'])\n@permission_classes([permissions.IsAuthenticated])\ndef get_poker_data(request):\n    try:\n        with open('highroll_poker_data.json', 'r') as f:\n            data = json.load(f)\n        return Response(data)\n    except FileNotFoundError:\n        return Response({\"error\": \"Poker data not found\"}, status=404)\n    except json.JSONDecodeError:\n        return Response({\"error\": \"Invalid poker data file\"}, status=500)\n"
+    },
+    {
+      "name": "tests.py",
+      "path": "backend/api/tests.py",
+      "size": 60,
+      "type": "text",
+      "line_count": 3,
+      "content": "from django.test import TestCase\n\n# Create your tests here.\n"
+    },
+    {
+      "name": "serializers.py",
+      "path": "backend/api/serializers.py",
+      "size": 365,
+      "type": "text",
+      "line_count": 14,
+      "content": "from rest_framework import serializers\nfrom .models import TweetTemplate, LastUpdate\n\n\nclass TweetTemplateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = TweetTemplate\n        fields = ['show', 'content']\n\n\nclass LastUpdateSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = LastUpdate\n        fields = ['update_time']\n"
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/api/__init__.py",
+      "size": 0,
+      "type": "text"
+    },
+    {
+      "name": "admin.py",
+      "path": "backend/api/admin.py",
+      "size": 63,
+      "type": "text",
+      "line_count": 3,
+      "content": "from django.contrib import admin\n\n# Register your models here.\n"
+    },
+    {
+      "name": "models.py",
+      "path": "backend/api/models.py",
+      "size": 316,
+      "type": "text",
+      "line_count": 13,
+      "content": "from django.db import models\nfrom django.contrib.auth.models import User\n\n# Create your models here.\n\n\nclass TweetTemplate(models.Model):\n    show = models.CharField(max_length=100, unique=True)\n    content = models.TextField()\n\n\nclass LastUpdate(models.Model):\n    update_time = models.DateTimeField(auto_now=True)\n"
+    }
+  ],
+  "directories": [
+    {
+      "path": "frontend",
+      "name": "frontend"
+    },
+    {
+      "path": "frontend/src",
+      "name": "src"
+    },
+    {
+      "path": "frontend/src/components",
+      "name": "components"
+    },
+    {
+      "path": "frontend/public",
+      "name": "public"
+    },
+    {
+      "path": "backend",
+      "name": "backend"
+    },
+    {
+      "path": "backend/scraper",
+      "name": "scraper"
+    },
+    {
+      "path": "backend/twitter",
+      "name": "twitter"
+    },
+    {
+      "path": "backend/backend",
+      "name": "backend"
+    },
+    {
+      "path": "backend/api",
+      "name": "api"
+    }
+  ],
+  "analysis": {
+    "framework": "Django",
+    "django_apps": [
+      "backend",
+      "api"
+    ],
+    "frontend": "React"
+  },
+  "excluded_files": [
+    {
+      "excluded": true,
+      "name": "package-lock.json",
+      "path": "frontend/package-lock.json",
+      "size": 758888,
+      "type": "text",
+      "line_count": 20016
+    }
+  ]
+}
