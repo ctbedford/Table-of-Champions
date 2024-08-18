@@ -20,7 +20,8 @@ SECRET_KEY = os.getenv(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com', '*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1',
+                 'toc-app-9e77537603ce.herokuapp.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -121,7 +122,7 @@ USE_TZ = True
 # Static files configuration
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR.parent, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # REST Framework and JWT settings
