@@ -11,6 +11,10 @@ from .serializers import TweetTemplateSerializer, LastUpdateSerializer
 from scraper.scraper import scrape_data
 from twitter.tweet_post_generator import generate_tweet
 from twitter.twitter_post import post_tweet
+from django.views.generic import TemplateView
+from django.views.decorators.cache import never_cache
+
+index = never_cache(TemplateView.as_view(template_name='index.html'))
 
 
 class TweetTemplateViewSet(viewsets.ModelViewSet):
@@ -73,3 +77,6 @@ def get_poker_data(request):
         return Response({"error": "Poker data not found"}, status=404)
     except json.JSONDecodeError:
         return Response({"error": "Invalid poker data file"}, status=500)
+
+
+index = never_cache(TemplateView.as_view(template_name='index.html'))
