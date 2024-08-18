@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = '/api';
+const API_URL = process.env.REACT_APP_API_URL || '/api';
+// Then use `${API_URL}/api/endpoint` for your API calls
 
 const api = axios.create({
   baseURL: API_URL,
