@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from datetime import timedelta
 import django_heroku
 import dj_database_url
+from django.core.wsgi import get_wsgi_application
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -178,3 +179,7 @@ if 'DYNO' in os.environ:
     if DATABASES['default']['ENGINE'] == 'django.db.backends.sqlite3':
         DATABASES['default'] = {k: v for k, v in DATABASES['default'].items() if k in [
             'ENGINE', 'NAME']}
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+
+application = get_wsgi_application()
