@@ -8,15 +8,14 @@ from .views import (
     sync_template,
     get_poker_data,
 )
-from api.views import index
-
+from django.views.generic import TemplateView
 
 router = DefaultRouter()
 router.register(r'templates', TweetTemplateViewSet)
 router.register(r'last-update', LastUpdateViewSet)
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', TemplateView.as_view(template_name='index.html')),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('post-tweet/', manual_post_tweet, name='post-tweet'),
