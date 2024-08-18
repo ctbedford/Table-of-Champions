@@ -50,7 +50,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True if DEBUG else False
-CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS', '').split(',')
+CORS_ALLOWED_ORIGINS = [origin for origin in os.getenv(
+    'CORS_ALLOWED_ORIGINS', '').split(',') if origin]
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -73,16 +74,25 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database configuration
-DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'), conn_max_age=600, ssl_require=True)
-}
-
-# Use SQLite for local development if DATABASE_URL is not set
-if os.getenv('DATABASE_URL') is None:
-    DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Database configuration
+if 'DATABASE_URL' in os.environ:
+    # Use PostgreSQL on Heroku
+    DATABASES = {
+        'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
     }
+else:
+    # Use SQLite for local development
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
+# Ensure SQLite doesn't receive PostgreSQL-specific options
+if DATABASES['default']['ENGINE'] == 'django.db.backends.sqlite3':
+    DATABASES['default'] = {k: v for k, v in DATABASES['default'].items() if k in [
+        'ENGINE', 'NAME']}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -153,12 +163,17 @@ SIMPLE_JWT = {
 }
 
 # Configure Django app for Heroku deployment
-django_heroku.settings(locals())
 
-# Override the DATABASE_URL set by django_heroku
-if os.getenv('DATABASE_URL') is None:
-    del DATABASES['default']['OPTIONS']['sslmode']
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+# Configure Django app for Heroku deployment
+if 'DYNO' in os.environ:
+    import django_heroku
+    django_heroku.settings(locals())
+    # Ensure SQLite doesn't receive PostgreSQL-specific options
+    if DATABASES['default']['ENGINE'] == 'django.db.backends.sqlite3':
+        DATABASES['default'] = {k: v for k, v in DATABASES['default'].items() if k in [
+            'ENGINE', 'NAME']}
